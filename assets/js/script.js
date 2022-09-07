@@ -77,117 +77,146 @@ const game = () => {
       "assets/images/" + computer + ".png";
 
    if (player === computer) {
-    result.textContent = "Tie";}
-    else {if (player == "rock"){
-        if(computer == "paper"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+    result.textContent = "Tie";
+   }else if (player == "rock") {
+    if (computer == "paper") {
+      result.textContent = "Computer Won";
+      computerScore++;
+      computerScoreBoard.textContent = computerScore;
+    else 
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
+}
+  } else if (player == "spock") {
+    if (computer == "paper") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else 
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
+}
+  } else if (player == "scissor") {
+    if (computer == "rock") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "spock"){
-        if (computer == "paper"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+  } else if (player == "lizard") {
+    if (computer == "rock") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "scissor"){
-        if (computer == "rock"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+  } else if (player == "rock") {
+    if (computer == "spock") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "lizard"){
-        if (computer == "rock"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+  } else if (player == "scissors") {
+    if (computer == "spock") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "rock"){
-        if (computer == "spock"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+  } else if (player == "spock") {
+    if (computer == "lizard") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "scissor"){
-        if (computer == "spock"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+  } else if (player == "paper") {
+    if (computer == "lizard") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "spock"){
-        if (computer == "lizard"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+  } else if (player == "paper") {
+    if (computer == "scissor") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "paper"){
-        if (computer == "lizard"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
+  } else if (player == "lizard") {
+    if (computer == "scissor") {
+      result.textContent = "Computer Won";
+
+      computerScore++;
+
+      computerScoreBoard.textContent = computerScore;
+    } else {
+      result.textContent = "Player Won";
+
+      playerScore++;
+
+      playerScoreBoard.textContent = playerScore;
     }
-    else if (player == "paper"){
-        if (computer == "scissor"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
-    }
-    else if (player == "lizard"){
-        if (computer == "scissor"){
-            result.textContent ="Computer Won";
-            computerScore++;
-            computerScoreBoard.textContent = computerScore;
-        }else{
-            result.textContent ="Player Won";
-            playerScore++;
-            playerScoreBoard.textContent = playerScore;
-        }
-    }
+  }
 };
   // Function to run when game is over
 
