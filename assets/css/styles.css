@@ -162,7 +162,6 @@
   /* Score Board */
   .score{
 
-	display: inline-block;
 	width: 50vw;
 	text-align: center;
 	display: flex;
@@ -172,6 +171,7 @@
   
   /* Score  */
   .p-count,.c-count{
+
 	width: 50%;
     margin: 10px;
 
@@ -186,29 +186,30 @@
   /* Reload button style */
   
 .reload {
-  
 	display: none;
-  
-	margin-top: 2rem;
-  
-	padding: 1rem;
-  
-	background: green;
-  
-	outline: none;
-  
-	border: none;
-  
-	border-radius: 10px;
-  
-	cursor: pointer;
+
   }
+
+#restart {
+	margin-top: 30px;
+	margin-left: 400px;
+	text-align: center;
+	font-size: 2rem;
+  
+	font-weight: bold;
+
+}
   
   .result{
   
-	margin-top: 20px;
+	margin-top: 50px;
   
 	font-size: 1.2rem;
+
+	text-align: center;
+	font-size: 2rem;
+  
+	font-weight: bold;
   }
   
   /* Responsive Design */
