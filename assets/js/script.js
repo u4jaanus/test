@@ -77,8 +77,8 @@ const game = () => {
       "assets/images/" + computer + ".png";
 
     if (player === computer) {
-    result.textContent = "Tie";
-    if (player == "rock"){
+    result.textContent = "Tie";}
+    else if (player == "rock"){
         if(computer == "paper"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -89,7 +89,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "spock"){
+    else if (player == "spock"){
         if (computer == "paper"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -100,7 +100,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "scissor"){
+    else if (player == "scissor"){
         if (computer == "rock"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -111,7 +111,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "lizard"){
+    else if (player == "lizard"){
         if (computer == "rock"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -122,7 +122,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "rock"){
+    else if (player == "rock"){
         if (computer == "spock"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -133,7 +133,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "scissor"){
+    else if (player == "scissor"){
         if (computer == "spock"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -144,7 +144,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "spock"){
+    else if (player == "spock"){
         if (computer == "lizard"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -155,7 +155,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "paper"){
+    else if (player == "paper"){
         if (computer == "lizard"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -166,7 +166,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "paper"){
+    else if (player == "paper"){
         if (computer == "scissor"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -177,7 +177,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-    if (player == "lizard"){
+    else if (player == "lizard"){
         if (computer == "scissor"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -188,7 +188,6 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-}
 
   // Function to run when game is over
 
