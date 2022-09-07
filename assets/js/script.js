@@ -76,9 +76,9 @@ const game = () => {
     document.getElementById("opponent-choice").src =
       "assets/images/" + computer + ".png";
 
-    if (player === computer) {
+   if (player === computer) {
     result.textContent = "Tie";}
-    else if (player == "rock"){
+    else {if (player == "rock"){
         if(computer == "paper"){
             result.textContent ="Computer Won";
             computerScore++;
@@ -188,7 +188,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-
+}
   // Function to run when game is over
 
   const gameOver = (playerOptions, movesLeft) => {
