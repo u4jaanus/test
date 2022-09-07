@@ -20,7 +20,7 @@ const game = () => {
 
     const playerOptions = [rockBtn, paperBtn, scissorBtn, lizardBtn, spockBtn];
 
-    const computerOptions = ["rock", "paper", "scissors", "lizard", "spock"];
+    const computerOptions = ["rock", "paper", "scissor", "lizard", "spock"];
 
     // Function to start playing game
 
@@ -32,7 +32,7 @@ const game = () => {
 
         movesLeft.innerText = `Moves Left: ${10 - moves}`;
 
-        const choiceNumber = Math.floor(Math.random() * 5);
+        const choiceNumber = Math.floor(Math.random() * 4);
 
         const computerChoice = computerOptions[choiceNumber];
 
@@ -92,7 +92,7 @@ const winner = (player, computer) => {
     
           playerScoreBoard.textContent = playerScore;
         }
-      } else if (player == "scissorn") {
+      } else if (player == "scissor") {
       if (computer == "rock") {
         result.textContent = "Computer Won";
   
@@ -106,7 +106,7 @@ const winner = (player, computer) => {
   
         playerScoreBoard.textContent = playerScore;
       }
-    } else if (player == "scissors") {
+    } else if (player == "scissor") {
         if (computer == "spock") {
           result.textContent = "Computer Won";
     
