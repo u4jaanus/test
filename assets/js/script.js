@@ -188,7 +188,7 @@ const game = () => {
             playerScoreBoard.textContent = playerScore;
         }
     }
-}
+};
   // Function to run when game is over
 
   const gameOver = (playerOptions, movesLeft) => {
