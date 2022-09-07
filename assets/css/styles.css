@@ -28,30 +28,6 @@
     text-align: center;
     font-size: 2.5rem;
   }
-  
-  /* Score Board */
-  .score{
-
-	display: inline-block;
-	width: 50vw;
-	text-align: center;
-	display: flex;
-	justify-content: space-evenly;
-	position: absolute;
-  }
-  
-  /* Score  */
-  .p-count,.c-count{
-	width: 50%;
-    margin: 10px;
-
-  }
-  
-  /* displaying three buttons in one line */
-  .options{
-	margin-top: 2rem;
-	margin-left: 50px;
-  }
 
   /* ------------------------------------------- All buttons */
 
@@ -63,6 +39,7 @@
 	font-weight: bold;
     letter-spacing: 1.2px;
     color: white;
+	margin: 20px;
 }
 
 .btn:focus {
@@ -145,12 +122,65 @@
     background-color: darkblue;
     color: white;
 }
+
+#your-choice {
+	width: 25%;
+	float: left;
+	margin-left: 15%;
+	margin-top: 25px;
+	border-radius: 15%;
+    background-color: white;
+    border: 6px solid;
+	height: 250px;
+
+}
+
+#opponent-choice {
+	width: 25%;
+	height: 250px;
+	float: right;
+	margin-right: 15%;
+	margin-top: 25px;
+	border-radius: 15%;
+    background-color: white;
+    border: 6px solid;
+	
+}
   
 .move{
-  
+	margin-top: 300px;
+	text-align: center;
 	font-size: 2rem;
   
 	font-weight: bold;
+  }
+
+.movesleft {
+	text-align: center;
+}
+
+  /* Score Board */
+  .score{
+
+	display: inline-block;
+	width: 50vw;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly;
+	position: absolute;
+  }
+  
+  /* Score  */
+  .p-count,.c-count{
+	width: 50%;
+    margin: 10px;
+
+  }
+  
+  /* displaying three buttons in one line */
+  .options{
+	margin-top: 2rem;
+	margin-left: 50px;
   }
   
   /* Reload button style */
