@@ -1,47 +1,161 @@
-:root {
-    --modal-duration: 1s;
+/* styles.css */
+/* universal selector - Applies to whole document */
+*{
+
+    padding: 0;
+  
+    margin: 0;
+  
+    box-sizing: border-box;
+  
+    background: #082c6c;
+  
+    color: #fff;
+  }
+  /* To center everything in game */
+  .game{
+  
+    display: flex;
+  
+    flex-direction: column;
+  
+    height: 100vh;
+  
+    width: 100vw;
+  
+    justify-content: center;
+  
+    align-items: center;
   }
   
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
+  /* Title of the game */
+  .title{
+  
+    position: absolute;
+  
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.5);
+  
+    font-size: 4rem;
+  
+    z-index: 2;
   }
   
-  .modal-content {
-    background: #fff;
+  /* Score Board */
+  .score{
+  
+    display: flex;
+  
+    width: 30vw;
+  
+    justify-content: space-evenly;
+  
+    position: absolute;
+  
+    top: 70px;
+  
+    z-index: 1;
+  }
+  
+  /* Score  */
+  .p-count,.c-count{
+  
     text-align: center;
-    margin: 10% auto;
-    width: 350px;
-    border-radius: 10px;
-    padding: 3rem;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
-    animation-name: modalopen;
-    animation-duration: var(--modal-duration);
-  }
   
-  .modal-content h1 {
-    margin-bottom: 1rem;
-  }
+    font-size: 1.5rem;
   
-  .modal-content p {
-    font-size: 1.2rem;
     margin-top: 1rem;
   }
   
-  @keyframes modalopen {
-    from {
-      opacity: 0;
-    }
+  /* displaying three buttons in one line */
+  .options{
   
-    to {
-      opacity: 1;
-    }
+    display: flex;
+  
+    width: 50vw;
+  
+    justify-content: space-evenly;
+  
+    margin-top: 2rem;
   }
   
+  /* Styling on all three buttons */
+  .rock, .paper, .scissor, .lizard, .spock{
+  
+    padding: 0.8rem;
+  
+    width: 100px;
+  
+    border-radius: 10px;
+  
+    background: green;
+  
+    outline: none;
+  
+    border-color: green;
+  
+    border: none;
+  
+    cursor: pointer;
+  }
+  
+  
+  .move{
+  
+    font-size: 2rem;
+  
+    font-weight: bold;
+  }
+  
+  /* Reload button style */
+  .reload {
+  
+    display: none;
+  
+    margin-top: 2rem;
+  
+    padding: 1rem;
+  
+    background: green;
+  
+    outline: none;
+  
+    border: none;
+  
+    border-radius: 10px;
+  
+    cursor: pointer;
+  }
+  
+  .result{
+  
+    margin-top: 20px;
+  
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Design */
+  
+  @media screen and (max-width: 612px)
+  {  
+  
+    .title{
+  
+        text-align: center;
+  
+    }
+  
+    .score{
+  
+        position: absolute;
+  
+        top: 200px;
+  
+        width: 100vw;
+  
+    }
+  
+    .options{
+  
+        width: 100vw;
+  
+    }
