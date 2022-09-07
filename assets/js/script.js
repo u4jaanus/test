@@ -32,7 +32,7 @@ const game = () => {
 
         movesLeft.innerText = `Moves Left: ${10 - moves}`;
 
-        const choiceNumber = Math.floor(Math.random() * 4);
+        const choiceNumber = Math.floor(Math.random() * computerOptions.length);
 
         const computerChoice = computerOptions[choiceNumber];
 
