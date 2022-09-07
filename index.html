@@ -1,39 +1,103 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://kit.fontawesome.com/17fd4ade2e.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/modal.css">
-  <title>Rock Paper Scissors</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+
+          content="width=device-width, 
+
+                   initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css".css">
+
+    <title>Rock Paper Scissor</title>
+
 </head>
+
 <body>
-  <div class="container">
-    <header class="header">
-      <h1>Rock Paper Scissor Lizard Spock</h1>
-      <button id="restart" class="restart-btn">Restart Game</button>
-      <div id="score" class="score">
-        <p>Player: 0</p>
-        <p>Computer: 0</p>
-      </div>
-    </header>
-    <h2>Make Your Selection</h2>
-    <div class="choices">
-        
-      <i id="rock" class="choice fa-solid fa-hand-back-fist"></i>
-      <i id="paper" class="choice fa-solid fa-hand"></i>
-      <i id="scissors" class="choice fa-solid fa-scissors"></i>
-      <i id="lizard" class="choice fa-solid fa-hand-lizard"></i>
-      <i id="spock" class="choice fa-solid fa-hand-spock"></i>
-      
-    </div>
-  </div>
-  <!-- Modal -->
-  <div class="modal">
-    <div id="result" class="modal-content"></div>
-  </div>
-  <script type="text/javascript" src="js/main.js"></script>
+
+    <section class="game">
+
+        <!--Title -->
+
+        <div class="title">Rock Paper Scissor</div>
+
+         
+
+          <!--Display Score of player and computer -->
+
+        <div class="score">  
+
+            <div class="playerScore">
+
+                <h2>Player</h2>
+
+                <p class="p-count count">0</p>
+ 
+
+            </div>       
+
+            <div class="computerScore">
+
+                <h2>Computer</h2>
+
+                <p class="c-count count">0</p>
+ 
+
+            </div>
+
+        </div>
+
+       
+
+        <div class="move">Choose your move</div>
+
+         
+
+          <!--Number of moves left before game ends -->
+
+        <div class="movesleft">Moves Left: 10 </div>
+
+         
+
+          <!--Options available to player to play game -->
+
+        <div class="options">
+
+            <button class="rock">Rock</button>
+
+            <button class="paper">Paper</button>
+
+            <button class="scissor">Scissors</button>
+            
+            <button class="lizard">Lizard</button>
+
+            <button class="spock">Spock</button>
+
+        </div>
+
+         
+
+          <!--Final result of game -->
+
+        <div class="result"></div>
+
+         
+
+          <!--Reload the game -->
+
+        <button class="reload"></button>
+ 
+
+    </section>
+ 
+
+    <script src="assets/js/script.js"></script>
+
 </body>
+
 </html>
